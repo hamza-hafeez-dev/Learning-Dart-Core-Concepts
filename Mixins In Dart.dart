@@ -45,7 +45,6 @@ void main(List<String> arguments) {
 
 // Student Class
 // ====================================================
-
 class Student {
   String name = 'Ali';
   int age = 33;
@@ -53,7 +52,6 @@ class Student {
 
 // Basic Mixins
 // ====================================================
-
 mixin CanRun {
   void run() {
     print('Running');
@@ -73,7 +71,6 @@ class ComputerStudent extends Student with CanRun, CanSwim {
 
 // Frontend & Backend Mixins
 // ====================================================
-
 mixin CanCode {
   void coding() => print('Can Code');
 }
@@ -93,7 +90,6 @@ class BackEnd with CanCode, CanTest {}
 
 // Mixin with Variables
 // ====================================================
-
 mixin HasName {
   String name = '';
 
@@ -111,7 +107,6 @@ class ArtStudent with HasName {
 
 // Mixin with Methods
 // ====================================================
-
 mixin Logger {
   void log(String message) {
     print('LOG: $message');
@@ -128,7 +123,6 @@ class AppService with Logger {
 
 // Using `on` with Mixins
 // ====================================================
-
 class BaseService {
   void serviceStart() {
     print('Service Starting...');
